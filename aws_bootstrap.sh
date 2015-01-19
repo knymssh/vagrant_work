@@ -22,7 +22,8 @@ sudo yum -y install php54 php54-mbstring php54-gd php54-pdo php54-mysql php54-mc
 echo "Installing MySQL"
 sudo yum -y remove mysql55*
 
-sudo rpm -ihv http://dev.mysql.com/get/mysql-community-release-el6-5.noarch.rpm
+
+sudo yum -y install http://repo.mysql.com/mysql-community-release-el6-5.noarch.rpm
 sudo yum -y install mysql
 #sudo yum -y install mysql-server
 
@@ -57,7 +58,7 @@ sudo chown -R vagrant: /var/www/html/public
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 
-cp -p /home/ec2-user/vagrant/composer.json /var/www/html/public/
+#cp -p /home/ec2-user/vagrant/public/composer.json /var/www/html/public/
 
 #composer install --no-dev
 #composer install --dev
