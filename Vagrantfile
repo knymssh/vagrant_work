@@ -40,7 +40,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
-  config.vm.synced_folder "vagrant_data", "/home/ec2-user/vagrant", create:true, type:"rsync"
+  #config.vm.synced_folder "vagrant_data", "/home/ec2-user/vagrant", create:true, type:"rsync"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -77,8 +77,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     # VPC config
     aws.subnet_id = "subnet-a7e2aecf"
+    #aws.subnet_id = "subnet-a6e2aece"
     #aws.private_id_address = "<PRIVATE IP ADDRESS>"
-    #aws.elastic_ip = true
+    aws.elastic_ip = true
     #aws.elastic_ip = "<ELASTIC IP ADDRESS>"
 
     # ELB

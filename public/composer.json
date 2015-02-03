@@ -1,4 +1,5 @@
 {
+    "name": "knymssh/cakephp_sample",
     "repositories": [
         {
             "type": "pear",
@@ -23,8 +24,13 @@
         "phpunit/phpunit-skeleton-generator": "*",
         "phpmd/phpmd": "~2.1",
         "apigen/apigen": "~4.0",
+        "phpdocumentor/phpdocumentor": "2.*",
         "squizlabs/php_codesniffer": "~1.4",
-        "cakephp/cakephp-codesniffer": "~1.0"
+        "cakephp/cakephp-codesniffer": "~1.0",
+        "phploc/phploc": "*",
+        "pdepend/pdepend" : "2.0.*",
+        "sebastian/phpcpd": "*",
+        "theseer/phpdox": "*"
     },
     "config": {
         "vendor-dir": "Vendor/"
